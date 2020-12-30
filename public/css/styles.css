@@ -1,0 +1,455 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #ebebeb;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Globales */
+
+h2 {
+  font-size: 2.4rem; /* 24px */
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.6rem;
+}
+
+p {
+  font-size: 1.4rem;
+}
+
+.grey {
+  color: #666666;
+}
+
+.green {
+  color: #39b54a;
+}
+
+.container {
+  width: 90%;
+  max-width: 108rem;
+  margin: auto;
+}
+
+.input-text {
+  height: 2.6rem;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+/* Header */
+
+header {
+  background-color: #eac926;
+  padding: 1rem 0rem;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0rem;
+}
+
+.header-msg {
+  text-align: center;
+}
+
+.logo {
+  width: 30%;
+  max-width: 20rem;
+}
+
+.header-search {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 70%;
+  max-width: 60rem;
+}
+
+.header-search form {
+  width: 90%;
+}
+
+.header-search input {
+  width: 100%;
+  border-radius: 0.5rem 0rem 0rem 0.5rem;
+}
+
+.header-search i {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  height: 2.6rem;
+  border: none;
+  border-radius: 0rem 0.5rem 0.5rem 0rem;
+  background-color: white;
+}
+
+/* Navigation */
+
+.header-bottom-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav {
+  font-size: 1.2rem;
+  display: none;
+}
+
+.nav a {
+  color: black;
+  text-decoration: none;
+  padding-right: 1rem;
+}
+
+.nav a:last-of-type {
+  padding-right: 0rem;
+}
+
+.burger-menu {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.burger {
+  font-size: 2rem;
+  background-color: #1259c3;
+  color: white;
+  padding: 0.36rem 0.4rem;
+  border-radius: 0.5rem;
+}
+
+/* Main */
+
+.article-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.article-box {
+  align-self: flex-start;
+  margin: 0.5rem 0rem 2.3rem;
+  background-color: white;
+  transition: box-shadow 1s;
+}
+
+.article-box:last-of-type {
+  margin-bottom: 0rem;
+}
+
+.article-box:hover {
+  box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+.article-box:hover .fa-truck {
+  transform: rotate(-90deg);
+}
+
+.article-img-box {
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.article-description-box {
+  margin-top: 0.5rem;
+  padding: 1.5rem;
+  border-top: 0.1rem solid #ebebeb;
+  position: relative;
+}
+
+.fa-truck {
+  font-size: 2rem;
+  padding: 0.5rem;
+  border: #39b54a solid 0.1rem;
+  border-radius: 50%;
+  transition: transform 1s;
+}
+
+.truck-container {
+  position: absolute;
+  top: -20px;
+  right: 25px;
+}
+
+.article-description-price-off {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.article-description-price-off h3 {
+  padding-right: 0.5rem;
+}
+
+.article-description-price-off h3,
+h4 {
+  margin: 0rem 0rem 1rem;
+}
+
+.article-description-hidden {
+  margin: 0rem 0rem;
+}
+
+/* Footer*/
+
+footer {
+  background-color: white;
+  padding: 0rem 2rem;
+  margin-top: 3rem;
+}
+
+footer h4,
+p {
+  margin: 0rem;
+  color: #666;
+  text-align: center;
+}
+
+.contenedor-footer {
+  padding-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.div-footer {
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logos {
+  font-size: 3.2rem;
+  margin-bottom: 1rem;
+  color: #1259c3;
+}
+
+.copyright {
+  padding-left: 0rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+/* register.html */
+
+/* hacer clase para los input en el sector de estilos globales */
+
+.form {
+  width: 100%;
+}
+.form-row {
+  width: 100%;
+  max-width: 45rem;
+  margin: 1.2rem auto;
+}
+
+/*
+#file-upload-button {
+  border: none;
+  border-radius: 0.5rem;
+}
+*/
+
+.form-row-label-desktop {
+  display: none;
+}
+
+.form-row {
+  display: inline-block;
+}
+
+.form-row input,
+label,
+button {
+  width: 100%;
+  height: 4rem;
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+}
+
+.form-row-options input {
+  width: 2.4rem;
+  height: 1.4rem;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+}
+
+.form-row-options label {
+  display: block;
+  width: 100%;
+  height: 2.2rem;
+}
+
+.form-row-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0rem 3rem;
+}
+
+.form-row-buttons button {
+  width: 48%;
+  max-width: 30rem;
+  height: 4rem;
+  margin: 0.5rem;
+  background-color: #6f6f6f80;
+  transition: all 0.3s;
+}
+
+.form-row-buttons button:hover {
+  color: white;
+  background-color: #1259c3;
+}
+
+
+.file-upload {
+  width: 8rem;
+  height: 4rem;
+  padding: 0.5rem 0.8rem;
+  margin: 0.5rem;
+  background-color: #6f6f6f80;
+}
+
+/* login.html */
+
+@media (min-width: 481px) {
+  /* Header */
+
+  .header-top-nav {
+    display: flex;
+    align-items: center;
+  }
+  .header-search input {
+    height: 3rem;
+  }
+
+  .header-search i {
+    height: 3rem;
+    padding: 0.8rem;
+  }
+  .header-top {
+    width: 70%;
+  }
+  .header-msg {
+    width: 30%;
+  }
+
+  .header-msg h4 {
+    text-align: right;
+  }
+
+  .burger {
+    display: none;
+  }
+
+  .nav {
+    display: block;
+  }
+
+  /* Main */
+
+  main h2 {
+    margin-left: 0.4rem;
+  }
+
+  .register-main-heading {
+    margin: 2rem 0rem;
+  }
+
+  .article-box {
+    width: calc(50% - 1rem);
+    margin: 2rem 0.5rem;
+  }
+
+  /* Form */
+
+  .form-row-label-desktop {
+    display: block;
+    height: 2.6rem;
+  }
+
+  /* Footer */
+
+  .div-footer {
+    width: 55%;
+  }
+}
+
+@media (min-width: 769px) {
+  /* Header */
+
+  /* Main */
+
+  main section {
+    margin: 2rem 0rem;
+  }
+
+  main section h2 {
+    margin: 1rem 0.4rem;
+  }
+
+  .register-main-heading {
+    margin: 2rem 0rem;
+  }
+
+  .article-box {
+    width: calc(25% - 1rem);
+    margin: 2rem 0.5rem;
+  }
+
+  .article-description-hidden {
+    display: none;
+  }
+
+  .article-box:hover .article-description-hidden {
+    display: flex;
+  }
+  .article-box:hover {
+    margin-bottom: -1.8rem;
+  }
+
+  /* Form */
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .form-row {
+    margin: 1rem 0rem;
+  }
+
+  .form-login {
+    align-items: center;
+  }
+
+  .title-login {
+    text-align: center;
+  }
+
+  /* Footer */
+
+  .contenedor-footer {
+    flex-wrap: nowrap;
+  }
+  .div-footer {
+    width: 30%;
+  }
+}
