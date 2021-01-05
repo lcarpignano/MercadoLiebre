@@ -106,7 +106,7 @@ header {
 }
 
 .nav {
-  font-size: 1.2rem;
+  font-size: 1rem;
   display: none;
 }
 
@@ -175,7 +175,7 @@ header {
 
 .fa-truck {
   font-size: 2rem;
-  padding: 0.5rem;
+  padding: 0.6rem 0.4rem;
   border: #39b54a solid 0.1rem;
   border-radius: 50%;
   transition: transform 1s;
@@ -199,7 +199,7 @@ header {
 
 .article-description-price-off h3,
 h4 {
-  margin: 0rem 0rem 1rem;
+  margin: 0rem;
 }
 
 .article-description-hidden {
@@ -345,13 +345,14 @@ button {
     padding: 0.8rem;
   }
   .header-top {
-    width: 70%;
+    width: 60%;
   }
   .header-msg {
-    width: 30%;
+    width: 40%;
   }
 
   .header-msg h4 {
+    padding-top: 1rem;
     text-align: right;
   }
 
@@ -394,6 +395,17 @@ button {
 
 @media (min-width: 769px) {
   /* Header */
+
+  .header-top {
+    width: 70%;
+  }
+  .header-msg {
+    width: 30%;
+  }
+
+  .nav {
+    font-size: 1.2rem;
+  }
 
   /* Main */
 
